@@ -24,7 +24,7 @@
 #let theorem(title: none, id: none, it) = [
 	#figure(
 		kind: "prop",
-		supplement: "定義",
+		supplement: "定理",
 	)[
 		#block(
 			radius: 4pt,
