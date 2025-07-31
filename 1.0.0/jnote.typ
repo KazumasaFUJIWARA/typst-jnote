@@ -188,6 +188,16 @@
 	align(right)[□]
 }
 
+#let appendix(body) = {
+  set heading(numbering: "A.", supplement: [Appendix])
+  counter(heading).update(0)
+	set figure(
+		numbering: num =>
+			numbering("A.1", counter(heading).get().first(), num)
+	)
+  body
+}
+
 #let jnote(
 	title: none,
 	affiliation: none,
@@ -210,6 +220,7 @@
 		counter(figure.where(kind: image)).update(0)
 		counter(figure.where(kind: table)).update(0)
 		counter(figure.where(kind: raw)).update(0)
+		counter(figure.where(kind: "prop")).update(0)
 		it
 	}
 
