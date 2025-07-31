@@ -44,6 +44,29 @@
 	#if id != none { label(id)}
 ]
 
+#let axiom(title: none, id: none, it) = [
+	#figure(
+		kind: "prop",
+		supplement: "公理",
+	)[
+		#block(
+			radius: 4pt,
+			inset: 10pt,
+			width: 100%,
+			stroke: (2pt + black),
+		)[
+			#align(left)[
+				*公理*
+				#context counter(figure.where(kind: "prop")).display()
+				#if title != none [* : #title *]
+				#v(-0.3em)
+				#it
+			]
+		]
+	]
+	#if id != none { label(id)}
+]
+
 #let proposition(title: none, id: none, it) = [
 
 	#figure(
