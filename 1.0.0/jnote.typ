@@ -4,10 +4,11 @@
 		supplement: "定義",
 	)[
 		#block(
-			radius: 4pt,
+			radius: 0pt,
 			inset: 10pt,
-			fill: silver,
+			fill: luma(245),
 			width: 100%,
+			stroke: (left: 4pt + navy.lighten(-30%)),
 		)[
 			#align(left)[
 				*定義 *
@@ -30,7 +31,7 @@
 			radius: 4pt,
 			inset: 10pt,
 			width: 100%,
-			stroke: (2pt + black),
+			stroke: (1pt + red.lighten(-20%)),
 		)[
 			#align(left)[
 				*定理*
@@ -53,7 +54,7 @@
 			radius: 4pt,
 			inset: 10pt,
 			width: 100%,
-			stroke: (2pt + black),
+			stroke: (1pt + purple.lighten(-25%)),
 		)[
 			#align(left)[
 				*公理*
@@ -68,7 +69,6 @@
 ]
 
 #let proposition(title: none, id: none, it) = [
-
 	#figure(
 		kind: "prop",
 		supplement: "命題",
@@ -76,9 +76,8 @@
 		#block(
 			radius: 4pt,
 			inset: 10pt,
-			fill: luma(250),
 			width: 100%,
-			stroke: (2pt + gray),
+			stroke: (1pt + orange.lighten(-20%)),
 		)[
 			#align(left)[
 				*命題 *
@@ -101,7 +100,7 @@
 			radius: 4pt,
 			inset: 10pt,
 			width: 100%,
-			stroke: (4pt + silver),
+			stroke: (1pt + green.lighten(-20%)),
 		)[
 			#align(left)[
 				*補題 *
@@ -124,7 +123,7 @@
 			radius: 4pt,
 			inset: 10pt,
 			width: 100%,
-			stroke: (2pt + silver),
+			stroke: (1pt + teal.lighten(-50%)),
 		)[
 			#align(left)[
 				*系 *
@@ -146,7 +145,7 @@
 		#block(
 			inset: 10pt,
 			width: 100%,
-			stroke: (left: 2pt + black),
+			stroke: (left: 2pt + maroon.lighten(-10%)),
 		)[
 			#align(left)[
 				*註 *
@@ -168,7 +167,7 @@
 		#block(
 			inset: 10pt,
 			width: 100%,
-			stroke: (left: 2pt + gray),
+			stroke: (left: 2pt + olive.lighten(-10%)),
 		)[
 			#align(left)[
 				*例 *
