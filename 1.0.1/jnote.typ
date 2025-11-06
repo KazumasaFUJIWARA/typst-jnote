@@ -232,10 +232,11 @@
 		numbering: num =>
 			numbering("1.1", counter(heading).get().first(), num)
 	)
+
 	show math.equation: it => {
 		if it.block and not it.has("label") [
 			#counter(math.equation).update(v => v - 1)
-			#math.equation(it.body, block: true, numbering: none)#label(" ")
+			#math.equation(it.body, block: true, numbering: none) #label("_skip-eq")
 		] else {
 		it
 		}

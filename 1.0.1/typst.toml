@@ -1,4 +1,4 @@
 [package]
 name = "jnote"
-version = "1.0.0"
-entrypoint = "jnote.typ" 
+version = "1.0.1"
+entrypoint = "jnote.typ"
