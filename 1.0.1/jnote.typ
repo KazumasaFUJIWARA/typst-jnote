@@ -1,3 +1,7 @@
+#let trans(input) = math.attach(
+	input,
+	tl: math.upright("t") // 左上(top-left)に直立体のtを配置
+)
 #let definition(title: none, id: none, it) = [
 	#figure(
 		kind: "prop",
