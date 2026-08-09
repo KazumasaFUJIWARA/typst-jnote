@@ -1,6 +1,6 @@
 # 数学文書スタイル (jnote.typ)
 
-[🔙readme](../README.md)
+[🔙readme](../README.md) · [板書記法 AUTHORING.md](../AUTHORING.md)
 
 ## 概要
 

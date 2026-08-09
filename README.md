@@ -22,7 +22,13 @@
 独自スタイルなので変更も見当対象です.
 
 ## 使用方法
-各varsionの`README.md`を確認して下さい.
+各versionの`README.md`を確認して下さい.
+
+## 板書・講義ノートの記法
+
+エージェント向けの書き方・落とし穴（`cases`・表・指数・絶対値など）は
+**[AUTHORING.md](./AUTHORING.md)** を正本とする。
+API リファレンス（`theorem` / `remark` 等）は各バージョンの `README.md`。
 
 ## トラブルシューティング
 
